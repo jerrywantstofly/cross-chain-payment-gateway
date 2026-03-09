@@ -1,38 +1,136 @@
-.App {
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Center container */
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Bridge card */
+
+.bridge-card {
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 15px;
+  width: 420px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+/* Title */
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Balance boxes */
+
+.balance-box {
+  background: #334155;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Inputs and dropdowns */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #475569;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Button */
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg,#3b82f6,#6366f1);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:hover {
+  opacity: 0.9;
+}
+
+/* Progress text */
+
+.progress-step {
+  margin-top: 10px;
+}
+
+/* Transaction history */
+
+.history-box {
+  background: #334155;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+/* ------------------------- */
+/* Bridge animation section */
+/* ------------------------- */
+
+.bridge-visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+  position: relative;
+}
+
+/* Chain boxes */
+
+.chain-box {
+  background: #334155;
+  padding: 15px;
+  border-radius: 8px;
+  width: 120px;
+  text-align: center;
+}
+
+/* Token */
+
+.token {
+  width: 24px;
+  height: 24px;
+  background: #22c55e;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Animation trigger */
+
+.animate {
+  animation: moveToken 2s linear forwards;
+}
+
+/* Keyframes */
+
+@keyframes moveToken {
+
+  0% {
+    left: 0px;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    left: 220px;
   }
+
 }

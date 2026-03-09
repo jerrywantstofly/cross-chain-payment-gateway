@@ -65,6 +65,20 @@ async function main() {
 
   /*
   --------------------------------
+  Copy deployments.json to frontend
+  --------------------------------
+  */
+
+  fs.writeFileSync(
+    "frontend/src/deployments.json",
+    JSON.stringify(deployments, null, 2)
+  );
+
+  console.log("📄 frontend deployments.json updated");
+
+
+  /*
+  --------------------------------
   Update relayer.js automatically
   --------------------------------
   */
@@ -84,7 +98,6 @@ async function main() {
   fs.writeFileSync("relayer.js", relayerCode);
 
   console.log("🔧 relayer.js updated automatically");
-
 
   console.log("\nSetup Complete 🎉");
 

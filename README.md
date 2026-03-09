@@ -149,7 +149,7 @@ Wrapped Token Contract (Chain B)
 
 ## 🚀 Running the Project
 
-### 1️⃣ Start Chain A
+### 1️⃣ Start Chain A (in terminal 1)
 
 ```
 
@@ -157,7 +157,7 @@ npx hardhat node --port 8545
 
 ```
 
-### 2️⃣ Start Chain B
+### 2️⃣ Start Chain B (in terminal 2)
 
 ```
 
@@ -165,7 +165,7 @@ npx hardhat node --port 8546
 
 ```
 
-### 3️⃣ Deploy Contracts
+### 3️⃣ Deploy Contracts (in terminal 3)
 
 ```
 
@@ -175,7 +175,7 @@ npx hardhat run scripts/setup.js --network chainA
 
 ---
 
-### 4️⃣ Start Relayer
+### 4️⃣ Start Relayer (in terminal 4)
 
 ```
 
@@ -185,7 +185,7 @@ node relayer.js
 
 ---
 
-### 5️⃣ Start Frontend
+### 5️⃣ Start Frontend (in terminal 5)
 
 ```
 
